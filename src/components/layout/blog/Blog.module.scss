@@ -1,0 +1,38 @@
+.blog {
+	margin-top: 70px;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 70px;
+
+	h2 {
+		padding-top: 20px;
+		border-top: 1px solid;
+		font-size: 30px;
+		font-weight: 800;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 74px;
+		column-gap: 94px;
+
+		@media (max-width: 768px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.card {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 50px;
+
+			img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+}
